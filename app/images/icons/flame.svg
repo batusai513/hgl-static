@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>flame</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="flame" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M264,480 C162.368,480 80,394.256 80,298 C80,275.648 80.496,257.504 96,240 C94.32,250.144 118.352,336.88 196.88,332.336 C193.472,266.432 175.648,104.976 258.432,49.168 C251.12,136.912 272.608,254.784 368.464,272 C362.976,236.816 363.632,178.288 388.272,167.472 C390.928,221.376 430.784,254.624 430.784,306.432 C430.784,400.256 340.016,480 264,480 L264,480 Z M414.48,111.248 C344.32,131.248 331.472,187.968 336,224 C285.952,165.152 288,97.488 288,0 C127.488,60.528 164.816,235.008 160,288 C119.632,254.96 112,176 112,176 C69.376,197.936 48,256.496 48,304 C48,418.88 141.12,512 256,512 C370.88,512 464,418.88 464,304 C464,235.728 413.872,204.24 414.48,111.248 L414.48,111.248 Z" id="Fill-156" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
