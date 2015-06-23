@@ -15,11 +15,12 @@
   background-size: cover;
   color: white;
   position: relative;
+  padding: $base-spacing-unit 0;
   @media #{$small} {
     background-image: url('../images/main-hero-image.jpg');
     background-size: cover;
-    @include rem(800px, height);
-    height: 90%;
+    height: 100%;
+    padding: 0;
   }
 }
 

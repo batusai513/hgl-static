@@ -1,0 +1,8 @@
+.vm-table{
+	display: table;
+	height: 100%;
+	&__cell{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

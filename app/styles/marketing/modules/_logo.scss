@@ -4,6 +4,7 @@
   & > a{
     @extend %main-sprite;
     @extend %image-replace;
+    vertical-align: middle;
     background-position: -5px -6px;
     width: 183px;
     height: 54px;

@@ -1,0 +1,41 @@
+.main-navigation{
+	font-weight: 400;
+	display: none;
+	font-size: 1.05em;
+	@media #{$medium} {
+		display: block!important;
+	}
+	@media #{$medium-max} {
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
+	&__item{
+		> a{
+			color: white;
+			transition: all 0.2s ease-out;
+			padding: $half-spacing-unit / 3 $half-spacing-unit;
+			display: inline-block;
+			border-radius: 100px;
+			&:hover{
+				color: white;
+			}
+			@media #{$medium-max} {
+				color: black;
+				display: block;
+				&:hover{
+					color: gray;
+				}
+			}
+		}
+		&.is-active a{
+			background-color: rgba(white, 0.22);
+		}
+		@media #{$medium-max} {
+			z-index: 2;
+			background-color: white;
+			display: list-item;
+			text-align: center;
+		}
+	}
+}
