@@ -86,7 +86,7 @@
 
 .hero--main__title{
   @include rem($font-size-h2);
-  font-weight: 200;
+  font-family: $font-family-sans-serif;
   text-transform: uppercase;
   b{
     font-weight: 300;
@@ -94,7 +94,7 @@
 }
 
 .hero--main__subtitle{
-  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .title--bordered{

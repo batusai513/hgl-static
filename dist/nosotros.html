@@ -9,7 +9,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/7fcee5a5.vendor.css">
     <link href="http://fonts.googleapis.com/css?family=Lora|Ovo|Muli" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/f313a771.hglstyles.css">
+    <link rel="stylesheet" href="styles/c05145ab.hglstyles.css">
     <!--[if lte IE 8]>
     <script src="scripts/vendor/d41d8cd9.respond.js"></script>
     <![endif]-->
@@ -21,77 +21,129 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="sticky-footer">
-      <header class="main-header">
-        <div class="container">
-          <div class="header-container">
-            <div class="header__logo-area">
-              <h1 class="flush">
-                <a href="index.html">
-                  <img src="hgl-logo.svg" alt="HGL Constructores">
-                </a>
-              </h1>
-            </div><div class="header__navigation-area">
-              <nav class="main-navigation">
-                <ul class="nav flush--bottom">
-                  <li class="nav__item main-navigation__item">
-                    <a href="inicio.html">Inicio</a>
-                    </li>
-                  <li class="nav__item main-navigation__item">
-                    <a href="nosotros.html">Nosotros</a>
-                    </li>
-                  <li class="nav__item main-navigation__item">
-                    <a href="servicios.html">Servicios</a>
-                    </li>
-                  <li class="nav__item main-navigation__item">
-                    <a href="proyectos.html">Proyectos</a>
-                    </li>
-                  <li class="nav__item main-navigation__item">
-                    <a href="contacto.html">Contactanos</a>
-                    </li>
-                </ul>
-              </nav>
-            </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="header-container">
+          <div class="header__logo-area">
+            <h1 class="main-logo">
+              <a href="index.html">
+                3D Bambu
+              </a>
+            </h1>
+          </div><div class="header__navigation-area">
+            <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
+            <nav class="main-navigation" id="main-navigation">
+              <ul class="nav flush--bottom">
+                <li class="nav__item main-navigation__item">
+                  <a href="proyectos.html">Obras Realizadas</a>
+                </li>
+                <li class="nav__item main-navigation__item">
+                  <a href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav__item main-navigation__item">
+                  <a href="nosotros.html">Quienes Somos</a>
+                </li>
+                <li class="nav__item main-navigation__item">
+                  <a href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </header>
-      <section class="masthead">
-        <div class="container">
-          <h1 class="flush">Acerca de Nosotros</h1>
-          <p class="delta">subtitulo para el masterhead</p>
-        </div>
-      </section>
-
+      </div>
+    </header>
+    <section class="hero hero--instalation text-center">
       <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat earum deleniti repellat corporis aspernatur delectus perspiciatis vel necessitatibus sunt veritatis magnam in repudiandae, facere ab nam voluptas consectetur inventore.</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo asperiores fugiat vel iste repudiandae deserunt iusto veniam nesciunt non similique, ea minima voluptatum, eos sit a recusandae dolor nisi beatae?
-        </p>
+        <h1 class="flush uppercase">Instalando el panel 3d</h1>
+        <p>Fácil y rápido</p>
       </div>
-    </div>
-    <footer class="main-footer">
+    </section>
+
+    <section class="pane pane--large">
       <div class="container text-center">
-        <nav>
-          <ul class="nav footer-navigation">
-            <li class="nav__item">
-              <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav__item">
-              <a href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav__item">
-              <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav__item">
-              <a href="contacto.html">Contactanos</a>
-            </li>
-          </ul>
-        </nav>
-        <p class="flush--bottom">
-          HGL Constructores 2015
+        <h1 class="text-uppercase border--small border--small--center">Instalación</h1>
+        <p class="flush">
+          En 3d Bambú contamos con personal técnico especializado que garantiza una instalación profesional.
         </p>
       </div>
+    </section>
+
+    <section class="pane pane--medium text-center bg-lighter-gray">
+      <div class="container text-center">
+        <p>Mantente al tanto de promociones, noticias y concursos. <br> Suscribete a nuestro newsletter.</p>
+        <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail_2">
+          <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+          <input type="hidden" name="good_url" value="/good.html">
+          <div class="form-group">
+          <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
+            <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" class="form-control newsletter__input input--large">
+          </div>
+          <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <article class="footer-container">
+          <div class="footer__navigation">
+            <h1 class="epsilon title--bordered">Navegacion</h1>
+            <nav>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a href="texturas.html">Paneles 3D</a>
+                </li>
+                <li class="">
+                  <a href="caracteristicas.html">Características</a>
+                </li>
+                <li class="">
+                  <a href="instalacion.html">Instalación</a>
+                </li>
+                <li class="">
+                  <a href="faq.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="">
+                  <a href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+            </div><article class="footer__social">
+              <h1 class="epsilon title--bordered">Somos sociales</h1>
+                <ul class="list-unstyled">
+                  <li class="">
+                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="https://instagram.com/3dbambu/">
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="https://twitter.com/3dbambu">
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
+                    </a>
+                  </li>
+                </ul>
+            </article><article class="footer__newsletter">
+              <h1 class="epsilon title--bordered">Suscribete</h1>
+              <p>
+                Mantente al tanto de las promociones, <br> noticias y concursos
+              </p>
+              <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
+                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="good_url" value="/good.html">
+                <div class="form-group">
+                <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
+                  <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" class="form-control newsletter__input input--large">
+                </div>
+                <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
+              </form>
+            </article>
+          </article>
+        </div>
+      
     </footer>
 
     <script src="scripts/b883cf14.vendor.js"></script>

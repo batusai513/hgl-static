@@ -24,7 +24,19 @@
       <script src="bower_components/respond/dest/respond.src.js"></script>
     <![endif]-->
     <!-- endbuild -->
-
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Crimson+Text::latin', 'Montserrat::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -69,7 +81,7 @@
               </a>
             </h1>
             <p class="hero--main__title">Construyendo Confianza</p>
-            <p class="hero--main__subtitle">Atendemos a clientes pequeños y grandes que sean personas o empresas del sector público o privado y deseen ejecutar obras de construcción y remodelación en los sectores residencial, comercial, industrial y hospitalario.</p>
+            <p class="hero--main__subtitle">Atendemos a clientes pequeños y grandes que sean personas o empresas del sector <br> público o privado y deseen ejecutar obras de construcción y remodelación en los sectores <br> residencial, comercial, industrial y hospitalario.</p>
             <div class="group-buttons">
               <a href="proyectos.html" class="button button--huge button-border button-border--white text-uppercase">Ver proyectos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
             </div>  
@@ -89,23 +101,44 @@
             <p>
               Nos dedicamos a la Construcción, desde el diseño preliminar, análisis de costos, planeación, hasta puesta en marcha del proyecto. Nuestros servicios incluyen reparaciones locativas, ampliaciones, impermeabilizaciones, cubiertas, etc.
             </p>
-            <a href="servicios.html" class="button button--huge button-border button-border--brand text-uppercase">Mas sobre nosotros <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <a href="nosotros.html" class="button button--huge button-border button-border--brand text-uppercase">Mas sobre nosotros <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pane pane--spaces">
-      <div class="container text-center">
-        <h1 class="gamma">Espacios</h1>
-        <p>
-          Los paneles decorativos son una alternativa moderna para decorar espacios <br> interiores como paredes y techos de casas, locales comerciales y hoteles.
-        </p>
-          <div class="group-buttons">
-            <a href="caracteristicas.html" class="button button--huge button-border button-border--white text-uppercase">Caracteristicas</a>
-          </div>
+<section class="pane pane--spaces">
+  <div class="container text-center">
+    <h1 class="gamma flush--top">Servicios</h1>
+    <p>
+      Nuestros aliados estrategicos, para alcanzar resultados optimos
+    </p>
+    <ul class="grid">
+      <li class="grid__item small--one-third">
+        <article>
+          <span class="icon-store round-icon round-icon--large round-icon--default push--bottom"></span>
+          <h1 class="delta flush--bottom">Construccion</h1>
+          <p>soluciones constructivas en el área Industrial, comercial y residencial</p>
+        </article>
+      </li><li class="grid__item small--one-third">
+        <article>
+          <span class="icon-help round-icon round-icon--large round-icon--default push--bottom"></span>
+          <h1 class="delta flush--bottom">Consultoria</h1>
+          <p>Asesoria y consultoria para las muchas facetas del proyecto de construccion</p>
+        </article>
+      </li><li class="grid__item small--one-third">
+        <article>
+          <span class="icon-tools round-icon round-icon--large round-icon--default push--bottom"></span>
+          <h1 class="delta flush--bottom">Servicios</h1>
+          <p>Servicios varios relacionados con las construccion, mantenimiento y reparacion</p>
+        </article>
+      </li>
+    </ul>
+      <div class="group-buttons">
+        <a href="servicios.html" class="button button--huge button-border button-border--white text-uppercase">Nuestros Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
       </div>
-    </section>
+  </div>
+</section>
 
     <section class="pane">
       <div class="container text-center">
@@ -131,7 +164,7 @@
           <div class="grid__item medium--two-thirds">
             <p class="gamma push-half--ends">¡Quiero contruir con ustedes!</p>
           </div><div class="grid__item medium--one-third">
-            <a href="proyectos.html" class="button button--huge button-border text-uppercase">Ver Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <a href="contacto.html" class="button button--huge button-border text-uppercase">Contactanos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
           </div>
         </div>
       </div>

@@ -44,13 +44,10 @@
 
 .pane--spaces{
 	@extend .pane--large;
-	background-image: url('../images/espacios.jpg');
-	background-position: center;
-	background-size: cover;
+	background-color: #252525;
 	color: white;
 	@media #{$small} {
-		@include rem(400px, height);
-		padding: $base-spacing-unit * 4 0;
+		padding: $base-spacing-unit * 3 0;
 	}
 }
 

@@ -13,17 +13,17 @@ $end: right;
 
 
 //Typography
-$font-family-sans-serif:            "san francisco", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
-$font-family-serif:                 "Lora", Cambria, Times New Roman, Times, serif !default;
-$font-family-base:                  $font-family-sans-serif;
+$font-family-sans-serif:            "Montserrat", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$font-family-serif:                 "Crimson Text", Cambria, Times New Roman, Times, serif !default;
+$font-family-base:                  $font-family-serif;
 //$font-family-icons:                 "offers";
 
 $golden-ratio:                      1.5;
 
 $font-size-base:                    16px;
 $em-base:                           $font-size-base;
-$font-weight-base:                  300;
-$font-size-large:                   ceil($font-size-base * 1.1428); //16px
+$font-weight-base:                  400;
+$font-size-large:                   floor($font-size-base * 1.1428); //16px
 $font-size-small:                   ceil($font-size-base * 0.85); //11px
 $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 
@@ -66,7 +66,8 @@ $border-radius-large:               6px;
 $border-radius-small:               3px;
 
 // Buttons
-$btn-font-weight:                600;
+$btn-font-family: 				 $font-family-sans-serif; //puede ser inherit
+$btn-font-weight:                400;
 $button-border-width:            1px;
 
 $btn-default-color:              white;
@@ -94,7 +95,6 @@ $btn-danger-bg:                  $brand-danger;
 $btn-danger-border:              darken($btn-danger-bg, 5%);
 
 $btn-link-disabled-color:        $gray-light;
-$btn-font-weight:                600;
 
 
 //== Forms
