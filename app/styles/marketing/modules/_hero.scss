@@ -10,16 +10,16 @@
 }
 
 .hero--main{
-  background-image: url('../images/main-hero-image.jpg');
+  background-image: url('http://sass.fffunction.co/assets/demo/range.jpg');
   background-position: right;
   background-size: cover;
   color: white;
   position: relative;
   padding: $base-spacing-unit 0;
   @media #{$small} {
-    background-image: url('../images/main-hero-image.jpg');
+    background-image: url('http://sass.fffunction.co/assets/demo/range.jpg');
     background-size: cover;
-    height: 100%;
+    height: 90%;
     padding: 0;
   }
 }
@@ -32,11 +32,11 @@
   @media #{$small} {
     background-image: url('../images/hero-textures-image.jpg');
     background-size: auto;
-    @include rem(400px, height);
+    @include rem(350px, height);
   }
 }
 
-.hero--reinvent{
+.hero--servicios{
   background-image: url('../images/hero-reinvent-image-small.jpg');
   background-position: center;
   background-size: cover;
@@ -56,7 +56,7 @@
   @media #{$small} {
     background-image: url('../images/hero-instalation-image.jpg');
     background-size: auto;
-    @include rem(500px, height);
+    @include rem(350px, height);
   }
 }
 
@@ -80,7 +80,7 @@
   @media #{$small} {
     background-image: url('../images/hero-contact-image.jpg');
     background-size: auto;
-    @include rem(400px, height);
+    @include rem(350px, height);
   }
 }
 

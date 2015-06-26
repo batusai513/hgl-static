@@ -20,19 +20,19 @@ $font-family-base:                  $font-family-serif;
 
 $golden-ratio:                      1.5;
 
-$font-size-base:                    16px;
+$font-size-base:                    17px;
 $em-base:                           $font-size-base;
 $font-weight-base:                  400;
-$font-size-large:                   floor($font-size-base * 1.1428); //16px
+$font-size-large:                   floor($font-size-base * 1.1); //16px
 $font-size-small:                   ceil($font-size-base * 0.85); //11px
 $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 
-$font-size-h1:                      floor($font-size-base * 2.571); //36px
-$font-size-h2:                      ceil($font-size-base * 2.14); //30px
-$font-size-h3:                      ceil($font-size-base * 2); //28px
-$font-size-h4:                      ceil($font-size-base * 1.571); //18px
-$font-size-h5:                      ceil($font-size-base * 1.1142); //14px
-$font-size-h6:                      ceil($font-size-base * 1); //12px
+$font-size-h1:                      floor($font-size-base * 2.4); //36px
+$font-size-h2:                      ceil($font-size-base * 2.1); //30px
+$font-size-h3:                      ceil($font-size-base * 1.8); //28px
+$font-size-h4:                      ceil($font-size-base * 1.5); //18px
+$font-size-h5:                      ceil($font-size-base * 1.1); //14px
+$font-size-h6:                      ceil($font-size-base * 0.95); //12px
 
 $line-height-base:                  $golden-ratio;
 $line-height-computed:              floor($font-size-base * $line-height-base);
@@ -171,6 +171,6 @@ $breakpoints: (
     'extra-small' '(min-width: #{$screen-extra-small})'
 )!default;
 
-$breakpoint-has-widths: ('extra-small', 'small', 'medium', 'large')!default;
+$breakpoint-has-widths: ('small', 'medium', 'large')!default;
 $breakpoint-has-push:   ('small', 'medium', 'large')!default;
 $breakpoint-has-pull:   ('small', 'medium', 'large')!default;

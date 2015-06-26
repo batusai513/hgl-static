@@ -1,11 +1,15 @@
 .portfolio{
 	@extend %grid;
-	@extend %grid--wide;
+	@extend %grid--narrow;
 }
 
 .portfolio__container{
 	@extend %grid__item;
-	@extend %medium--one-third;
+	@extend %medium--one-half;
+}
+
+.portfolio__container--single{
+	@extend %medium--two-thirds;
 }
 
 .portfolio-item{
@@ -25,19 +29,26 @@
 .portfolio__content{
 	padding: 0 6px;
 }
-.portfolio__thumb{
-	width: 50px;
-	height: 50px;
-	margin-top: $half-spacing-unit;
-	display: inline-block;
+// .portfolio__thumb{
+// 	width: 50px;
+// 	height: 50px;
+// 	margin-top: $half-spacing-unit;
+// 	display: inline-block;
+// }
+.portfolio-item__text{
+	@include rem($half-spacing-unit, margin-bottom);
+	color: #807f7f;
+}
+%shared-styles{
+	letter-spacing: 2px;
+	color: black;
+	text-transform: uppercase;
 }
 .portfolio-item__title{
-	@extend .weight-semibold;
-	margin-bottom: $half-spacing-unit;
-}
-.portfolio-item__text{
-	font-weight: 300;
+	@extend %shared-styles;
 }
 .portfolio-item__category{
-	@include font-size(13px);
+	@extend %shared-styles;
+	@include font-size(10px);
+	font-family: $font-family-sans-serif;
 }

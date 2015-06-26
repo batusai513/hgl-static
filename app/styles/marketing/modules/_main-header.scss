@@ -14,16 +14,3 @@
 	bottom: 0;
 }
 
-.header-container{
-	@extend %grid;
-	@extend %grid--middle;
-}
-
-.header__logo-area,
-.header__navigation-area{
-	@extend %grid__item;
-}
-
-.header__navigation-area{
-	@extend %one-whole;
-}

@@ -39,12 +39,12 @@
 }
 
 .pane--small{
-	padding: $base-spacing-unit 0;
+	padding: $base-spacing-unit * 2 0;
 }
 
 .pane--spaces{
 	@extend .pane--large;
-	background-color: #252525;
+	background-color: #4A4A4A;
 	color: white;
 	@media #{$small} {
 		padding: $base-spacing-unit * 3 0;

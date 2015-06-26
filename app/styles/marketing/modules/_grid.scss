@@ -22,6 +22,10 @@
   @extend %small--one-third;
 }
 
+.small--two-thirds{
+  @extend %small--two-thirds;
+}
+
 .medium--two-thirds{
   @extend %medium--two-thirds;
 }
