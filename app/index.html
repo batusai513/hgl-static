@@ -35,7 +35,9 @@
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
-      })(); </script>
+      })();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -45,8 +47,9 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section class="hero hero--main text-center">
-      <header class="main-header header--index">
+    <h1 class="sr-only">HGL Constructores</h1>
+    <div class="hero hero--main text-center">
+      <header class="main-header header--index js-navigation">
         <div class="container">
           <div class="header-container">
             <div class="header__navigation-area">
@@ -74,22 +77,23 @@
       <div class="container" style="height: 100%;">
         <div class="vm-table">
           <div class="vm-table__cell">
-            <h1 class="main-logo">
+            <div class="main-logo">
               <a href="index.html">
                 3D Bambu
               </a>
-            </h1>
+            </div>
             <p class="hero--main__title">Construyendo Confianza</p>
             <p class="hero--main__subtitle">Atendemos a clientes pequeños y grandes que sean personas o empresas del sector <br> público o privado y deseen ejecutar obras de construcción y remodelación en los sectores <br> residencial, comercial, industrial y hospitalario.</p>
             <div class="group-buttons">
               <a href="proyectos.html" class="button button--huge button-border button-border--white text-uppercase">Ver proyectos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
-            </div>  
+            </div> 
+            <a href="#who" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x" aria-label="next"></a> 
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="pane pane--panels text-center">
+    <section class="pane pane--panels text-center" id="who">
       <div class="container">
         <div class="">
           <div class="">
@@ -100,46 +104,50 @@
             <p>
               Nos dedicamos a la Construcción, desde el diseño preliminar, análisis de costos, planeación, hasta puesta en marcha del proyecto. Nuestros servicios incluyen reparaciones locativas, ampliaciones, impermeabilizaciones, cubiertas, etc.
             </p>
-            <a href="nosotros.html" class="button button--huge button-border button-border--brand text-uppercase">Mas sobre nosotros <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <div class="group-buttons">
+              <a href="nosotros.html" class="button button--huge button-border button-border--brand text-uppercase">Mas sobre nosotros <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            </div>
           </div>
         </div>
+        <a href="#servicios" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x" aria-label="next"></a> 
       </div>
     </section>
 
-<section class="pane pane--spaces">
-  <div class="container text-center">
-    <h1 class="gamma flush--top">Servicios</h1>
-    <p>
-      Nuestros aliados estrategicos, para alcanzar resultados optimos
-    </p>
-    <ul class="grid">
-      <li class="grid__item small--one-third">
-        <article>
-          <span class="icon-store round-icon round-icon--large round-icon--default push--bottom"></span>
-          <h1 class="delta flush--bottom">Construccion</h1>
-          <p>soluciones constructivas en el área Industrial, comercial y residencial</p>
-        </article>
-      </li><li class="grid__item small--one-third">
-        <article>
-          <span class="icon-help round-icon round-icon--large round-icon--default push--bottom"></span>
-          <h1 class="delta flush--bottom">Consultoria</h1>
-          <p>Asesoria y consultoria para las muchas facetas del proyecto de construccion</p>
-        </article>
-      </li><li class="grid__item small--one-third">
-        <article>
-          <span class="icon-tools round-icon round-icon--large round-icon--default push--bottom"></span>
-          <h1 class="delta flush--bottom">Servicios</h1>
-          <p>Servicios varios relacionados con las construccion, mantenimiento y reparacion</p>
-        </article>
-      </li>
-    </ul>
-      <div class="group-buttons">
-        <a href="servicios.html" class="button button--huge button-border button-border--white text-uppercase">Nuestros Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+    <section class="pane pane--spaces" id="servicios">
+      <div class="container text-center">
+        <h1 class="gamma flush--top text-uppercase border--small border--small--center border--small--default">Servicios</h1>
+        <p class="text--large">
+          Ofrecemos una amplia gama de servicios en muchas areas de la construccion <br> completamente disponibles para tus proyectos mas ambiciosos
+        </p>
+        <ul class="grid">
+          <li class="grid__item small--one-third">
+            <article>
+              <span class="icon-store round-icon round-icon--large round-icon--default push--bottom"></span>
+              <h1 class="delta flush--bottom">Construccion</h1>
+              <p>soluciones constructivas en el área Industrial, comercial y residencial</p>
+            </article>
+          </li><li class="grid__item small--one-third">
+            <article>
+              <span class="icon-help round-icon round-icon--large round-icon--default push--bottom"></span>
+              <h1 class="delta flush--bottom">Consultoria</h1>
+              <p>Asesoria y consultoria para las muchas facetas del proyecto de construccion</p>
+            </article>
+          </li><li class="grid__item small--one-third">
+            <article>
+              <span class="icon-tools round-icon round-icon--large round-icon--default push--bottom"></span>
+              <h1 class="delta flush--bottom">Servicios</h1>
+              <p>Servicios varios relacionados con las construccion, mantenimiento y reparacion</p>
+            </article>
+          </li>
+        </ul>
+          <div class="group-buttons">
+            <a href="servicios.html" class="button button--huge button-border button-border--white text-uppercase">Nuestros Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+          </div>
+          <a href="#opinion" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x" aria-label="next"></a> 
       </div>
-  </div>
-</section>
+    </section>
 
-    <section class="pane">
+    <section class="pane pane--medium" id="opinion">
       <div class="container text-center">
         <h1 class="text-uppercase gamma">Lo que nuestros clientes opinan</h1>
         <div class="flexslider">
@@ -239,6 +247,10 @@
     <script src="bower_components/selectivizr/selectivizr.js"></script>
     <script src="bower_components/flexslider/jquery.flexslider.js"></script>
     <script src="bower_components/jquery.validate/dist/jquery.validate.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/velocity/velocity.ui.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="bower_components/waypoints/lib/shortcuts/sticky.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -38,4 +38,10 @@
 			text-align: center;
 		}
 	}
+	&--secondary{
+		text-align: center;
+		@media #{$medium} {
+			text-align: right;
+		}
+	}
 }

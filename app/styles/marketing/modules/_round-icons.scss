@@ -1,6 +1,12 @@
 .round-icon{
 	display: inline-block;
 	border-radius: 100%;
+	transition: all 0.2s ease-in;
+}
+
+.round-icon--small{
+	font-size: 2em;
+	padding: 0.3em;
 }
 
 .round-icon--large{
@@ -11,4 +17,12 @@
 .round-icon--default{
 	background-color: white;
 	color: #252525;
+}
+
+.round-icon--border{
+	border: 2px solid;
+	&:hover{
+		background-color: $color-brand;
+		color: #4A4A4A;
+	}
 }

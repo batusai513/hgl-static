@@ -12,5 +12,16 @@
 .header--index{
 	background-color: rgba(white, 0.09);
 	bottom: 0;
+	transition: all 0.1s ease-in;
+	&.stuck {
+		background-color: white;
+	 	position:fixed;
+	  	top:0;
+	  	height: 80px;
+	  	box-shadow: 0 2px 2px #ddd;
+	  	*{
+	  		color: $gray;
+	  	}
+	}
 }
 

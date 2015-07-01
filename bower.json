@@ -10,11 +10,16 @@
     "respond": "~1.4.2",
     "selectivizr": "~1.0.2",
     "flexslider": "*",
-    "jquery.validate": "~1.13.0"
+    "jquery.validate": "~1.13.0",
+    "velocity": "~1.2.2",
+    "waypoints": "~3.1.1"
   },
   "overrides": {
-      "flexslider": {
-          "main": ["jquery.flexslider.js", "flexslider.css"]
-      }
+    "flexslider": {
+      "main": [
+        "jquery.flexslider.js",
+        "flexslider.css"
+      ]
+    }
   }
 }

@@ -9,11 +9,26 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/7fcee5a5.vendor.css">
     <link href="http://fonts.googleapis.com/css?family=Lora|Ovo|Muli" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/59e5d840.hglstyles.css">
+    <link rel="stylesheet" href="styles/21922a5b.hglstyles.css">
     <!--[if lte IE 8]>
     <script src="scripts/vendor/d41d8cd9.respond.js"></script>
     <![endif]-->
     <!-- endbuild -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Crimson+Text::latin', 'Montserrat::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="scripts/vendor/fbe20327.modernizr.js"></script>
 
   </head>
@@ -23,7 +38,7 @@
     <![endif]-->
     <header class="main-header">
       <div class="container">
-        <div class="header-container drid">
+        <div class="header-container grid grid--middle">
           <div class="header__logo-area grid__item small--one-third">
             <h1 class="main-logo">
               <a href="index.html">
@@ -32,7 +47,7 @@
             </h1>
           </div><div class="header__navigation-area grid__item small--two-thirds">
             <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
-            <nav class="main-navigation" id="main-navigation">
+            <nav class="main-navigation main-navigation--secondary" id="main-navigation">
               <ul class="nav flush--bottom">
                 <li class="nav__item main-navigation__item">
                   <a href="proyectos.html">Obras Realizadas</a>
@@ -40,7 +55,7 @@
                 <li class="nav__item main-navigation__item">
                   <a href="servicios.html">Servicios</a>
                 </li>
-                <li class="nav__item main-navigation__item">
+                <li class="nav__item main-navigation__item is-active">
                   <a href="nosotros.html">Quienes Somos</a>
                 </li>
                 <li class="nav__item main-navigation__item">
@@ -52,23 +67,76 @@
         </div>
       </div>
     </header>
-    <section class="hero hero--instalation text-center">
+    <div class="hero hero--instalation text-center">
       <div class="container">
-        <h1 class="flush uppercase">Instalando el panel 3d</h1>
-        <p>Fácil y rápido</p>
+        <h1 class="flush uppercase">Nosotros</h1>
+      </div>
+    </div>
+
+    <section class="pane pane--medium">
+      <div class="container container--small">
+        <div class="text-center">
+          <div class="push--bottom">
+            <img src="images/25c7dc70.round-texture-image.jpg" alt="Textura cuadrada" width="150" height="150">
+          </div>
+          <div class="">
+                <h1 class="epsilon text-uppercase">Hugo Granados Lacera</h1>
+                <p>
+                  Ingeniero civil especializado en Gerencia de Proyectos de la Universidad del Norte, <br>con amplia experiencia en la construcción de obras residenciales, comerciales, industriales y hospitalarias.
+                </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="pane pane--large">
-      <div class="container text-center">
-        <h1 class="text-uppercase border--small border--small--center">Instalación</h1>
-        <p class="flush">
-          En 3d Bambú contamos con personal técnico especializado que garantiza una instalación profesional.
+    <section class="pane pane--medium">
+      <div class="container container--small">
+        <h1 class="epsilon text-uppercase border--small border--small--center text-center">Reseña de la empresa</h1>
+        <p>
+          Desde hace mas de 20 años hemos estado dedicados al desarrollo de proyectos civiles, de la mano de profesionales con amplia experiencia en proyección y evaluación de proyectos, interventorías y diseño de proyectos de construcción.
+        </p>
+        <p>
+          HGL Constructores se ha caracterizado por contar con un excelente personal comprometido con su trabajo, además de un gran número de colaboradores externos especialistas en Ingeniería Mecánica, Eléctrica, Arquitectura, Diseño de Interiores y Modeladores 3D, pensando siempre en las necesidades de nuestros clientes.
+        </p>
+        <p>
+          Actualmente nuestra empresa está conformada por un equipo de trabajo altamente capacitado, líder en el sector de la construcción que continuará contribuyendo al crecimiento y fortalecimiento de nuestro país.
         </p>
       </div>
     </section>
 
-    <section class="pane pane--medium text-center bg-lighter-gray">
+    <section class="pane pane--medium bg-lighter-gray no-border">
+      <h1 class="sr-only">Misión y Visión de la empresa</h1>
+      <div class="container container--small">
+        <h2 class="epsilon text-uppercase border--small border--small--center text-center">Misión</h2>
+        <p>
+          Desarrollar proyectos de ingeniería civil y arquitectura, teniendo en cuenta las normas establecidas para la construcción, aplicando los últimos avances tecnológicos y trabajando arduamente para suplir las necesidades y expectativas de nuestros clientes.
+        </p>
+        <h2 class="epsilon text-uppercase border--small border--small--center text-center">Visión</h2>
+        <p>
+          Enfocar el trabajo hacia la optimización de nuestros servicios para consolidarnos en el área de la ingeniería y arquitectura en Colombia como una empresa competitiva, versátil, ejemplar y en permanente disposición y acción para satisfacer los requerimientos de nuestros clientes.
+        </p>
+      </div>
+    </section>
+
+    <section class="pane pane--medium">
+      <h1 class="sr-only">Valores y politica de gestion integral</h1>
+      <div class="container container--small">
+        <h2 class="epsilon text-uppercase border--small border--small--center text-center">Nuestros Valores</h2>
+        <ul>
+          <li>Honestidad</li>
+          <li>Profesionalismo</li>
+          <li>Calidad de servicio</li>
+          <li>Compromiso con nuestros clientes</li>
+          <li>Asistencia personalizada</li>
+        </ul>
+        <h2 class="epsilon text-uppercase border--small border--small--center text-center">Política de gestión integral</h2>
+        <p>
+          En HGL Constructores estamos comprometidos con la entrega de productos y servicios de construcción que cumplan con todas las especificaciones técnicas y satisfagan las necesidades de los clientes; sean de optima calidad y garanticen la seguridad en usos residenciales, comerciales e industriales; contribuyan a conservar el medio ambiente, controlando los aspectos e impactos que se generan en nuestros procesos; y se construyan garantizando la salud y seguridad de los colaboradores controlando los peligros y los riesgos a los que están expuestos en los sitios de trabajo.
+        </p>
+      </div>
+    </section>
+
+    <div class="pane pane--medium text-center bg-lighter-gray">
       <div class="container text-center">
         <p>Mantente al tanto de promociones, noticias y concursos. <br> Suscribete a nuestro newsletter.</p>
         <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail_2">
@@ -81,7 +149,7 @@
           <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
         </form>
       </div>
-    </section>
+    </div>
 
     <footer class="main-footer">
       <div class="container">
@@ -91,13 +159,13 @@
             <nav>
               <ul class="list-unstyled">
                 <li class="">
-                  <a href="texturas.html">Paneles 3D</a>
+                  <a href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="">
-                  <a href="caracteristicas.html">Características</a>
+                  <a href="servicios.html">Servicios</a>
                 </li>
                 <li class="">
-                  <a href="instalacion.html">Instalación</a>
+                  <a href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="">
                   <a href="faq.html">Preguntas Frecuentes</a>
@@ -111,18 +179,18 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
-                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
+                    <a href="https://www.facebook.com/hglconstructores">
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://instagram.com/3dbambu/">
-                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
+                    <a href="https://instagram.com/hglconstructores/">
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://twitter.com/3dbambu">
-                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
+                    <a href="https://twitter.com/hglconstructores">
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructores
                     </a>
                   </li>
                 </ul>
@@ -146,7 +214,7 @@
       
     </footer>
 
-    <script src="scripts/b883cf14.vendor.js"></script>
+    <script src="scripts/3ba86fe4.vendor.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -158,6 +226,6 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <script src="scripts/71811209.main.js"></script>
+        <script src="scripts/80ef6106.main.js"></script>
 </body>
 </html>

@@ -9,11 +9,26 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/7fcee5a5.vendor.css">
     <link href="http://fonts.googleapis.com/css?family=Lora|Ovo|Muli" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/59e5d840.hglstyles.css">
+    <link rel="stylesheet" href="styles/21922a5b.hglstyles.css">
     <!--[if lte IE 8]>
     <script src="scripts/vendor/d41d8cd9.respond.js"></script>
     <![endif]-->
     <!-- endbuild -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Crimson+Text::latin', 'Montserrat::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="scripts/vendor/fbe20327.modernizr.js"></script>
 
   </head>
@@ -23,7 +38,7 @@
     <![endif]-->
     <header class="main-header">
       <div class="container">
-        <div class="header-container drid">
+        <div class="header-container grid grid--middle">
           <div class="header__logo-area grid__item small--one-third">
             <h1 class="main-logo">
               <a href="index.html">
@@ -32,7 +47,7 @@
             </h1>
           </div><div class="header__navigation-area grid__item small--two-thirds">
             <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
-            <nav class="main-navigation" id="main-navigation">
+            <nav class="main-navigation main-navigation--secondary" id="main-navigation">
               <ul class="nav flush--bottom">
                 <li class="nav__item main-navigation__item">
                   <a href="proyectos.html">Obras Realizadas</a>
@@ -43,7 +58,7 @@
                 <li class="nav__item main-navigation__item">
                   <a href="nosotros.html">Quienes Somos</a>
                 </li>
-                <li class="nav__item main-navigation__item">
+                <li class="nav__item main-navigation__item is-active">
                   <a href="contacto.html">Contacto</a>
                 </li>
               </ul>
@@ -52,13 +67,13 @@
         </div>
       </div>
     </header>
-    <section class="hero hero--contact text-center">
+    <div class="hero hero--contact text-center">
       <div class="container">
-        <h1 class="flush uppercase">¿ESTAS INTERESADO <br> EN NUESTROS PRODUCTOS?</h1>
+        <h1 class="flush uppercase">¿ESTAS INTERESADO <br> EN NUESTROS SERVICIOS?</h1>
         <p class="flush">Escríbenos para conocer más acerca de ellos, resolver alguna duda o cotizar algún producto. 
         <br> Nos encantaría encontrar una solución al proyecto que tienes en mente.</p>
       </div>
-    </section>
+    </div>
 
     <section class="pane pane--large">
       <div class="container">
@@ -105,42 +120,7 @@
                   </div>
                 </div>
               </div>
-              <div class="grid">
-                <div class="grid__item small--one-half">
-                  <div class="form-group has-feedback has-feedback--reverse">
-                    <label class="sr-only" for="empresa">Empresa</label>
-                    <input id="empresa" name="empresa" class="form-control input--large" placeholder="Empresa (opcional)">
-                    <span class="icon-store icon-lg form-control-feedback"></span>
-                  </div>
-                </div><div class="grid__item small--one-half">
-                  <div class="form-group">
-                    <label class="sr-only" for="subject">Motivo de Consulta</label>
-                    <div class="select">
-                      <select class="form-control input--large" id="subject" name="subject" required>
-                        <option value="">Motivo de Consulta</option>
-                        <option value="comentario">Comentario</option>
-                        <option value="cotizar">Cotizar un producto</option>
-                        <option value="pregunta">Pregunta</option>
-                        <option value="otro">Otro</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid">
-                <div class="grid__item small--one-half">
-                    <p class="help-block">
-                      <small>
-                        Sube una foto del espacio a instalar el panel, con las dimensiones (ancho por alto en cms)  cancela el valor del render y lo podras descontar del precio de venta
-                      </small>
-                    </p>
-                  <div class="form-group has-feedback has-feedback--reverse">
-                    <label class="sr-only" for="pic">Imagen</label>
-                    <input type="file" id="pic" name="pic" accept="image/*" class="form-control input--large">
-                    <span class="icon-store icon-lg form-control-feedback"></span>
-                  </div>
-                </div>
-              </div>
+
               <div class="form-group has-feedback has-feedback--reverse">
                 <label class="sr-only" for="mensaje">Escribe tu mensaje</label>
                 <textarea class="form-control input--large" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribir mensaje..." required></textarea>
@@ -158,7 +138,8 @@
                <div class="media__body">
                 <p>
                   <b>Teléfono:</b> <br>
-                  300-251-7205
+                  317-5100255, <br>
+                  +575 3044311
                 </p>
                </div>
             </div>
@@ -169,7 +150,7 @@
                <div class="media__body">
                 <p>
                   <b>Correo Electrónico</b> <br>
-                  <a href="mailto:comercial@3dbambu.co">comercial@3dbambu.co</a>
+                  <a href="mailto:gerente@hglconstructores.com">gerente@hglconstructores.com</a>
                 </p>
                </div>
             </div>
@@ -180,7 +161,7 @@
                <div class="media__body">
                 <p>
                   <b>Direccion:</b> <br>
-                  Calle 102 # 50-75, <br> oficina 402 <br>
+                  Carrera 45 # 80 - 285, <br> oficina 205 <br> Centro Comercial Sparta <br>
                   Barranquilla
                 </p>
                </div>
@@ -188,6 +169,11 @@
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section class="pane pane--map" id="map-canvas">
+      <h1 class="sr-only">Ubicacion en el mapa</h1>
     </section>
 
     <footer class="main-footer">
@@ -198,13 +184,13 @@
             <nav>
               <ul class="list-unstyled">
                 <li class="">
-                  <a href="texturas.html">Paneles 3D</a>
+                  <a href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="">
-                  <a href="caracteristicas.html">Características</a>
+                  <a href="servicios.html">Servicios</a>
                 </li>
                 <li class="">
-                  <a href="instalacion.html">Instalación</a>
+                  <a href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="">
                   <a href="faq.html">Preguntas Frecuentes</a>
@@ -218,18 +204,18 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
-                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
+                    <a href="https://www.facebook.com/hglconstructores">
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://instagram.com/3dbambu/">
-                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
+                    <a href="https://instagram.com/hglconstructores/">
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://twitter.com/3dbambu">
-                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
+                    <a href="https://twitter.com/hglconstructores">
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructores
                     </a>
                   </li>
                 </ul>
@@ -253,7 +239,7 @@
       
     </footer>
 
-    <script src="scripts/b883cf14.vendor.js"></script>
+    <script src="scripts/3ba86fe4.vendor.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -265,6 +251,6 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <script src="scripts/71811209.main.js"></script>
+        <script src="scripts/80ef6106.main.js"></script>
 </body>
 </html>

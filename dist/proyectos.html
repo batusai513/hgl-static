@@ -9,11 +9,26 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/7fcee5a5.vendor.css">
     <link href="http://fonts.googleapis.com/css?family=Lora|Ovo|Muli" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/59e5d840.hglstyles.css">
+    <link rel="stylesheet" href="styles/21922a5b.hglstyles.css">
     <!--[if lte IE 8]>
     <script src="scripts/vendor/d41d8cd9.respond.js"></script>
     <![endif]-->
     <!-- endbuild -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Crimson+Text::latin', 'Montserrat::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="scripts/vendor/fbe20327.modernizr.js"></script>
 
   </head>
@@ -32,10 +47,9 @@
             </h1>
           </div><div class="header__navigation-area grid__item small--two-thirds">
             <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
-            <nav class="main-navigation" id="main-navigation">
-              <h1 class="sr-only">Navegacion principal</h1>
+            <nav class="main-navigation main-navigation--secondary" id="main-navigation">
               <ul class="nav flush--bottom">
-                <li class="nav__item main-navigation__item">
+                <li class="nav__item main-navigation__item is-active">
                   <a href="proyectos.html">Obras Realizadas</a>
                 </li>
                 <li class="nav__item main-navigation__item">
@@ -62,13 +76,13 @@
         </div>
       </div>
 
-      <div class="pane pane--small">
+      <div class="pane pane--medium">
         <div class="container text-center">
-          <p>Nuestra trayectoria y experiencia de mas de 20 años te dara la confianza de un trabajo <br> con los mas altos estandares de calidad.</p>
+          <p class="flush--bottom">Contamos con 22 años de experiencia en la elaboración y construcción de obras civiles del área residencial, comercial, industrial y hospitalaria, dentro de las que se destacan viviendas unifamiliares, multifamiliares, hangares, bodegas, obras de urbanismo, pavimentos e infraestructura.</p>
         </div>
       </div>
 
-      <section class="pane">
+      <section class="pane pane--medium">
         <div class="container">
           <h1 class="text-center flush sr-only">Proyectos mas recientes</h1>
           <ul class="portfolio">
@@ -205,6 +219,21 @@
                     Interventoría de obras, dirección de proyecto general de una clínica de 3200 m2 de especialidad en traumatología. 3 UCI, resonador magnético, TAC.
                   </p>
                   <p class="portfolio-item__category">Santa Marta, 2013-2014</p>
+                </div>
+              </article>
+            </li><li class="portfolio__container">
+              <article class="portfolio-item js-gallery">
+                <figure class="portfolio__image">
+                  <a href="http://lorempixel.com/500/300/city">
+                    <img src="http://lorempixel.com/500/300/city" alt="Textura Beach">
+                  </a>
+                </figure>
+                <div class="portfolio__content">
+                  <h1 class="zeta portfolio-item__title">OFICARIBE</h1>
+                  <p class="portfolio-item__text">
+                    Demolición de bodega existente y diseños generales para bodega actualmente ubicada en la calle 79 con vía 40. Área de 2.600m2.
+                  </p>
+                  <p class="portfolio-item__category">Barranquilla, 2013</p>
                 </div>
               </article>
             </li><li class="portfolio__container">
@@ -428,13 +457,13 @@
             <nav>
               <ul class="list-unstyled">
                 <li class="">
-                  <a href="proyectos.html">Obras Realizadas</a>
+                  <a href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="">
-                  <a href="caracteristicas.html">Características</a>
+                  <a href="servicios.html">Servicios</a>
                 </li>
                 <li class="">
-                  <a href="instalacion.html">Instalación</a>
+                  <a href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="">
                   <a href="faq.html">Preguntas Frecuentes</a>
@@ -448,18 +477,18 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
-                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
+                    <a href="https://www.facebook.com/hglconstructores">
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://instagram.com/3dbambu/">
-                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
+                    <a href="https://instagram.com/hglconstructores/">
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://twitter.com/3dbambu">
-                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
+                    <a href="https://twitter.com/hglconstructores">
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructores
                     </a>
                   </li>
                 </ul>
@@ -483,7 +512,7 @@
       
     </footer>
 
-    <script src="scripts/b883cf14.vendor.js"></script>
+    <script src="scripts/3ba86fe4.vendor.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -495,6 +524,6 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <script src="scripts/71811209.main.js"></script>
+        <script src="scripts/80ef6106.main.js"></script>
 </body>
 </html>
