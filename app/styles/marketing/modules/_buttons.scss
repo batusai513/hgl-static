@@ -88,6 +88,29 @@
   }
 }
 
+.button-border--gray{
+  color: $gray;
+  border-color: $gray;
+  &:hover,
+  &:active,
+  &:focus{
+    color: white;
+    background-color: $gray;
+  }
+}
+
 .group-buttons{
   margin: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
+  &--large{
+    @media #{$small}{
+      margin: $base-spacing-unit * 4 0 $base-spacing-unit * 4;  
+    }
+  }
+}
+
+.button-next{
+  @media #{$medium}{
+    position: absolute;
+    bottom: 130px;
+  }
 }

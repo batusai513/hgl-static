@@ -2,8 +2,10 @@
 	font-family: $font-family-sans-serif;
 	display: none;
 	font-size: 1.05em;
+	text-align: center;
 	@media #{$medium} {
 		display: block!important;
+		text-align: right;
 	}
 	@media #{$medium-max} {
 		position: absolute;
@@ -12,13 +14,13 @@
 	}
 	&__item{
 		> a{
-			color: white;
+			color: $gray-dark;
 			transition: all 0.2s ease-out;
 			padding: $half-spacing-unit / 3 $half-spacing-unit;
 			display: inline-block;
 			border-radius: 100px;
 			&:hover{
-				color: white;
+				color: $color-brand;
 			}
 			@media #{$medium-max} {
 				color: black;
@@ -38,10 +40,15 @@
 			text-align: center;
 		}
 	}
-	&--secondary{
-		text-align: center;
-		@media #{$medium} {
-			text-align: right;
+}
+
+.main-navigation--index{
+	.main-navigation__item{
+		> a{
+			color: white;
+			&:hover{
+				color: $color-brand;
+			}
 		}
 	}
 }

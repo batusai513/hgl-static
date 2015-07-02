@@ -2,25 +2,22 @@
 	background-color: transparent;
 	width: 100%;
 	padding: $half-spacing-unit 0;
-	position: absolute;
 	z-index: 2;
-	@media #{$small} {
-		padding: $base-spacing-unit 0;
-	}
 }
 
 .header--index{
-	background-color: rgba(white, 0.09);
+	background-color: rgba(black, 0.5);
 	bottom: 0;
+	position: absolute;
 	transition: all 0.1s ease-in;
 	&.stuck {
 		background-color: white;
 	 	position:fixed;
 	  	top:0;
-	  	height: 80px;
+	  	height: 94px;
 	  	box-shadow: 0 2px 2px #ddd;
 	  	*{
-	  		color: $gray;
+	  		color: $gray !important;
 	  	}
 	}
 }

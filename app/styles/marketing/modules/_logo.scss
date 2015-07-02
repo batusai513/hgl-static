@@ -5,10 +5,20 @@
     @extend %main-sprite;
     @extend %image-replace;
     vertical-align: middle;
-    background-position: -5px -6px;
-    width: 183px;
-    height: 54px;
+    background-position: 0 -2px;
+    width: 104px;
+    height: 70px;
   }
+}
+
+.main-logo--large{
+  & > a{
+    @extend %main-sprite;
+    @extend %image-replace;
+    background-position: -5px -119px;
+    width: 196px;
+    height: 103px;
+  }  
 }
 
 @mixin logo-variant($large-size, $small-size) {

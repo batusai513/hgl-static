@@ -2,6 +2,10 @@
 .float-end { float: $end; }
 .float-none { float: none; }
 
+.font-size-large{
+  font-size: $font-size-large;
+}
+
 
 // Position elements
 .align-center,
@@ -214,3 +218,7 @@ img.full-width,
 .hard--left     { padding-left:  0; }
 .hard--ends     { padding-top:   0; padding-bottom:0; }
 .hard--sides    { padding-right: 0; padding-left:  0; }
+
+.round{
+  border-radius: 100%;
+}

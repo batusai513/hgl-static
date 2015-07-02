@@ -25,7 +25,7 @@
     <!-- endbuild -->
     <script type="text/javascript">
       WebFontConfig = {
-        google: { families: [ 'Crimson+Text::latin', 'Montserrat::latin' ] }
+        google: { families: [ 'Open+Sans:400,700:latin', 'Montserrat::latin' ] }
       };
       (function() {
         var wf = document.createElement('script');
@@ -51,10 +51,16 @@
     <div class="hero hero--main text-center">
       <header class="main-header header--index js-navigation">
         <div class="container">
-          <div class="header-container">
-            <div class="header__navigation-area">
+          <div class="header-container grid grid--middle">
+            <div class="header__logo-area grid__item small--one-third">
+            <h1 class="main-logo">
+              <a href="index.html">
+                3D Bambu
+              </a>
+            </h1>
+          </div><div class="header__navigation-area text-right grid__item small--two-thirds">
               <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
-              <nav class="main-navigation" id="main-navigation">
+              <nav class="main-navigation main-navigation--index" id="main-navigation">
                 <ul class="nav flush--bottom">
                   <li class="nav__item main-navigation__item">
                     <a href="proyectos.html">Obras Realizadas</a>
@@ -77,32 +83,34 @@
       <div class="container" style="height: 100%;">
         <div class="vm-table">
           <div class="vm-table__cell">
-            <div class="main-logo">
+            <div class="main-logo main-logo--large push--bottom">
               <a href="index.html">
                 3D Bambu
               </a>
             </div>
-            <p class="hero--main__title">Construyendo Confianza</p>
-            <p class="hero--main__subtitle">Atendemos a clientes pequeños y grandes que sean personas o empresas del sector <br> público o privado y deseen ejecutar obras de construcción y remodelación en los sectores <br> residencial, comercial, industrial y hospitalario.</p>
-            <div class="group-buttons">
-              <a href="proyectos.html" class="button button--huge button-border button-border--white text-uppercase">Ver proyectos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <p class="hero--main__title">Construyendo <span class="color-brand">Confianza</span></p>
+            <div class="group-buttons group-buttons--large">
+              <a href="proyectos.html" class="button button--huge button--primary text-uppercase">Ver proyectos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
             </div> 
-            <a href="#who" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x" aria-label="next"></a> 
+            <a href="#who" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x button-next" aria-label="next"></a> 
           </div>
         </div>
       </div>
     </div>
 
     <section class="pane pane--panels text-center" id="who">
-      <div class="container">
+      <div class="container container--small">
         <div class="">
           <div class="">
-            <img src="images/round-texture-image.jpg" alt="Textura cuadrada">
+            <img src="images/hugo.jpg" class="round" alt="Hugo Granados">
           </div>
           <div class="about-us__text">
-            <h1 class="gamma text-uppercase border--small border--small--center">¿Quiénes somos?</h1>
-            <p>
-              Nos dedicamos a la Construcción, desde el diseño preliminar, análisis de costos, planeación, hasta puesta en marcha del proyecto. Nuestros servicios incluyen reparaciones locativas, ampliaciones, impermeabilizaciones, cubiertas, etc.
+            <h1 class="beta border--small border--small--center">¿Quiénes somos?</h1>
+            <p class="">
+              Somos una empresa dedicada a la construcción de obras. Nuestro trabajo abarca desde el primer diseño, el análisis de costos y planeación, hasta la puesta en marcha de los proyectos.
+            </p>
+            <p class="">
+              Atendemos a clientes pequeños y grandes que sean personas o empresas del sector público o privado y deseen ejecutar obras de construcción y remodelación en los sectores residencial, comercial, industrial y hospitalario.
             </p>
             <div class="group-buttons">
               <a href="nosotros.html" class="button button--huge button-border button-border--brand text-uppercase">Mas sobre nosotros <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
@@ -115,22 +123,22 @@
 
     <section class="pane pane--spaces" id="servicios">
       <div class="container text-center">
-        <h1 class="gamma flush--top text-uppercase border--small border--small--center border--small--default">Servicios</h1>
+        <h1 class="beta flush--top border--small border--small--center border--small--default">Servicios</h1>
         <p class="text--large">
-          Ofrecemos una amplia gama de servicios en muchas areas de la construccion <br> completamente disponibles para tus proyectos mas ambiciosos
+          Ofrecemos una amplia gama de servicios en múltiples áreas de la construcción. <br> Estamos completamente preparados para tus proyectos mas ambiciosos.
         </p>
         <ul class="grid">
           <li class="grid__item small--one-third">
             <article>
               <span class="icon-store round-icon round-icon--large round-icon--default push--bottom"></span>
               <h1 class="delta flush--bottom">Construccion</h1>
-              <p>soluciones constructivas en el área Industrial, comercial y residencial</p>
+              <p>Soluciones constructivas en el área industrial, comercial, residencial y hospitalaria.</p>
             </article>
           </li><li class="grid__item small--one-third">
             <article>
               <span class="icon-help round-icon round-icon--large round-icon--default push--bottom"></span>
               <h1 class="delta flush--bottom">Consultoria</h1>
-              <p>Asesoria y consultoria para las muchas facetas del proyecto de construccion</p>
+              <p>Asesoría y consultoría para las muchas facetas del proyecto de construccion</p>
             </article>
           </li><li class="grid__item small--one-third">
             <article>
@@ -141,23 +149,23 @@
           </li>
         </ul>
           <div class="group-buttons">
-            <a href="servicios.html" class="button button--huge button-border button-border--white text-uppercase">Nuestros Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <a href="servicios.html" class="button button--huge button-border button-border--brand text-uppercase">Nuestros Servicios <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
           </div>
           <a href="#opinion" class="js-next icon-arrow-down round-icon round-icon--small round-icon--border icon-2x" aria-label="next"></a> 
       </div>
     </section>
 
-    <section class="pane pane--medium" id="opinion">
+    <section class="pane pane--medium pane--clientes" id="opinion">
       <div class="container text-center">
-        <h1 class="text-uppercase gamma">Lo que nuestros clientes opinan</h1>
-        <div class="flexslider">
-          <ul class="slides">
+        <h1 class=" beta">Lo que nuestros clientes opinan</h1>
+        <div class="">
+          <ul class="nav">
             <li>
               <blockquote>
                 <p>
                   "Estoy muy bien impresionada con el trabajo y dedicación de todos los empleados de esta empresa. Por primera vez sentí tranquilidad de que las cosas  iban a salir bien y confianza total en los resultados. Los recomiendo ampliamente y les deseo el éxito que se merecen".
                 </p>
-                <p> <img class="push-half--bottom" src="images/juan-ortiz.jpg" alt="Omaria Chavez" width="50" height="50"> <br> <strong>Omaria Chavez</strong></p>
+                <p>  <strong>Omaria Chavez</strong></p>
               </blockquote>
             </li>
           </ul>
@@ -165,13 +173,13 @@
       </div>
     </section>
 
-    <div class="pane pane--small bg-brand text-center">
+    <div class="pane pane--small pane-construir text-center">
       <div class="container container--small">
         <div class="grid grid--middle">
           <div class="grid__item medium--two-thirds">
-            <p class="gamma push-half--ends">¡Quiero contruir con ustedes!</p>
+            <p class="gamma push-half--ends color-white">¡Quiero construir con ustedes!</p>
           </div><div class="grid__item medium--one-third">
-            <a href="contacto.html" class="button button--huge button-border text-uppercase">Contactanos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
+            <a href="contacto.html" class="button button--huge button-border button-border--brand text-uppercase">Contactanos <span class="icon icon-arrow-right icon-lg push-half--left" aria-hidden="true"></span></a>
           </div>
         </div>
       </div>
@@ -194,9 +202,6 @@
                   <a href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="">
-                  <a href="faq.html">Preguntas Frecuentes</a>
-                </li>
-                <li class="">
                   <a href="contacto.html">Contacto</a>
                 </li>
               </ul>
@@ -216,7 +221,7 @@
                   </li>
                   <li class="">
                     <a href="https://twitter.com/hglconstructores">
-                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructores
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructor
                     </a>
                   </li>
                 </ul>

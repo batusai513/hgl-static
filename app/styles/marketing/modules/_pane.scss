@@ -47,11 +47,19 @@
 
 .pane--spaces{
 	@extend .pane--large;
-	background-color: #4A4A4A;
-	color: white;
+	background-color: $gray-lighter;
+	color: $gray;
 	@media #{$small} {
 		padding: $base-spacing-unit * 3 0;
 	}
+}
+
+.pane--clientes{
+	background-color: #e6e6e6;
+}
+
+.pane-construir{
+	background-color: rgba(#4A4A4A, 0.80);
 }
 
 .pane--panels{
