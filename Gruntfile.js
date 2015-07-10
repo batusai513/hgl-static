@@ -263,6 +263,15 @@ module.exports = function (grunt) {
                 },
                 {
                   removeEmptyAttrs: false
+                },
+                {
+                  removeUnknownsAndDefaults: false
+                },
+                {
+                  collapseGroups: false
+                },
+                {
+                  convertShapeToPath: false
                 }
             ]
         },
@@ -334,6 +343,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt,pdf,php}',
             'images/{,*/}*.webp',
+            'images/{,*/}*.svg',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
@@ -380,8 +390,8 @@ module.exports = function (grunt) {
       dist: [
         'sass',
         'copy:styles',
-        'imagemin',
-        'svgmin'
+        'imagemin'
+        //'svgmin'
       ]
     }
   });
