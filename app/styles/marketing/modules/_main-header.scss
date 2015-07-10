@@ -9,16 +9,19 @@
 	background-color: rgba(black, 0.5);
 	bottom: 0;
 	position: absolute;
-	transition: all 0.1s ease-in;
+	transition: all 0.3s ease-in;
 	&.stuck {
 		background-color: white;
 	 	position:fixed;
 	  	top:0;
-	  	height: 94px;
+	  	height: 97px;
 	  	box-shadow: 0 2px 2px #ddd;
 	  	*{
 	  		color: $gray !important;
 	  	}
+	}
+	@media #{$medium} {
+		height: 97px;
 	}
 }
 

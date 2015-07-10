@@ -20,6 +20,12 @@
         "jquery.flexslider.js",
         "flexslider.css"
       ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.js",
+        "lib/shortcuts/sticky.js"
+      ]
     }
   }
 }

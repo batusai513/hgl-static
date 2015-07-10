@@ -5,11 +5,13 @@
 
 .portfolio__container{
 	@extend %grid__item;
-	@extend %medium--one-half;
+	@extend %small--one-half;
+	@extend %medium--one-third;
 }
 
 .portfolio__container--single{
-	@extend %medium--two-thirds;
+	@extend %grid__item;
+	@extend %medium--one-half;
 }
 
 .portfolio-item{
@@ -38,6 +40,7 @@
 .portfolio-item__text{
 	@include rem($half-spacing-unit, margin-bottom);
 	color: #807f7f;
+	font-size: 14px;
 }
 %shared-styles{
 	letter-spacing: 2px;
@@ -46,6 +49,7 @@
 }
 .portfolio-item__title{
 	@extend %shared-styles;
+	font-size: 16px;
 }
 .portfolio-item__category{
 	@extend %shared-styles;
