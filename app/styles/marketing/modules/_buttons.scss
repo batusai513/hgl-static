@@ -102,7 +102,7 @@
 .group-buttons{
   margin: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
   &--large{
-    @media #{$small}{
+    @media #{$medium}{
       margin: $base-spacing-unit * 4 0 $base-spacing-unit * 4;  
     }
   }

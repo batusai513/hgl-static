@@ -1,0 +1,14 @@
+.value__item{
+	text-align: center;
+	padding-left: em($base-spacing-unit);
+	padding-right: em($base-spacing-unit);
+	margin-bottom: em($base-spacing-unit * 2);
+}
+.value__title{
+	font-size: em(14);
+	line-height: $line-height-small;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: em($half-spacing-unit, 14);
+	border-top: 1px solid;
+}

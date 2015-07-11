@@ -20,17 +20,17 @@ $font-family-base:                  $font-family-serif;
 
 $golden-ratio:                      1.5;
 
-$font-size-base:                    18px;
+$font-size-base:                    17px;
 $em-base:                           $font-size-base;
 $font-weight-base:                  400;
 $font-size-large:                   floor($font-size-base * 1.1); //16px
 $font-size-small:                   ceil($font-size-base * 0.85); //11px
 $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 
-$font-size-h1:                      floor($font-size-base * 2.4); //36px
-$font-size-h2:                      ceil($font-size-base * 2.1); //30px
-$font-size-h3:                      ceil($font-size-base * 1.8); //28px
-$font-size-h4:                      ceil($font-size-base * 1.5); //18px
+$font-size-h1:                      floor($font-size-base * 2.2); //36px
+$font-size-h2:                      ceil($font-size-base * 1.8); //30px
+$font-size-h3:                      ceil($font-size-base * 1.6); //28px
+$font-size-h4:                      ceil($font-size-base * 1.4); //18px
 $font-size-h5:                      ceil($font-size-base * 1.1); //14px
 $font-size-h6:                      ceil($font-size-base * 0.95); //12px
 

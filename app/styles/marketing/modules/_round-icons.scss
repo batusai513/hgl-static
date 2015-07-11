@@ -9,6 +9,11 @@
 	padding: 0.3em;
 }
 
+.round-icon--medium{
+	font-size: 2em;
+	padding: 1em;
+}
+
 .round-icon--large{
 	font-size: 4em;
 	padding: 0.5em;
@@ -22,7 +27,8 @@
 .round-icon--border{
 	border: 2px solid;
 	&:hover{
-		background-color: $color-brand;
-		color: #4A4A4A;
+		background-color: $gray;
+		color: white;
+		box-shadow: 0 0 0 2px $gray;
 	}
 }
