@@ -52,13 +52,13 @@
     <header class="main-header">
       <div class="container">
         <div class="header-container grid grid--middle">
-          <div class="header__logo-area grid__item small--one-third">
+          <div class="header__logo-area grid__item one-half small--one-third">
             <h1 class="main-logo">
               <a href="index.html">
                 3D Bambu
               </a>
             </h1>
-          </div><div class="header__navigation-area grid__item small--two-thirds">
+          </div><div class="header__navigation-area text-end grid__item one-half small--two-thirds">
             <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
             <nav class="main-navigation main-navigation--secondary" id="main-navigation">
               <ul class="nav flush--bottom">
@@ -82,7 +82,7 @@
     </header>
     <div class="hero hero--instalation text-center">
       <div class="container">
-        <h1 class="flush ">Nosotros</h1>
+        <h1 class="flush hero--main__title">Nosotros</h1>
       </div>
     </div>
 
@@ -90,7 +90,7 @@
       <div class="container container--small">
         <div class="text-center">
           <div class="push--bottom">
-            <img src="images/round-texture-image.jpg" alt="Textura cuadrada" width="150" height="150">
+          <img src="images/hugo.jpg" class="round" alt="Hugo Granados" width="150" height="150">
           </div>
           <div class="">
                 <h1 class="epsilon border--small border--small--center">Hugo Granados Lacera</h1>
@@ -134,12 +134,18 @@
     <section class="pane pane--medium">
       <div class="container container--small">
         <h1 class="epsilon border--small border--small--center text-center">Nuestros Valores</h1>
-        <ul>
-          <li>Honestidad</li>
-          <li>Profesionalismo</li>
-          <li>Calidad de servicio</li>
-          <li>Compromiso con nuestros clientes</li>
-          <li>Asistencia personalizada</li>
+        <ul class="grid">
+          <li class="grid__item one-third">
+            Honestidad
+          </li><li class="grid__item one-third">
+            Profesionalismo
+          </li><li class="grid__item one-third">
+            Calidad de servicio
+          </li><li class="grid__item one-third">
+            Compromiso con nuestros clientes
+          </li><li class="grid__item one-third">
+            Asistencia personalizada
+          </li>
         </ul>
       </div>
     </section>
@@ -183,9 +189,6 @@
                 </li>
                 <li class="">
                   <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-                <li class="">
-                  <a href="faq.html">Preguntas Frecuentes</a>
                 </li>
                 <li class="">
                   <a href="contacto.html">Contacto</a>
@@ -238,6 +241,9 @@
     <script src="bower_components/selectivizr/selectivizr.js"></script>
     <script src="bower_components/flexslider/jquery.flexslider.js"></script>
     <script src="bower_components/jquery.validate/dist/jquery.validate.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="bower_components/waypoints/lib/shortcuts/sticky.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

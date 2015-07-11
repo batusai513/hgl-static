@@ -18,6 +18,10 @@
 	@extend %small--one-half;
 }
 
+.one-half{
+  @extend %one-half;
+}
+
 .small--one-third{
   @extend %small--one-third;
 }
@@ -32,6 +36,10 @@
 
 .medium--one-third{
   @extend %medium--one-third;
+}
+
+.two-thirds{
+  @extend %two-thirds;
 }
 
 .border--small{

@@ -18,7 +18,11 @@
 			transition: all 0.2s ease-out;
 			padding: $half-spacing-unit / 3 $half-spacing-unit;
 			display: inline-block;
-			border-radius: 100px;
+			border-bottom: 1px solid $gray-lighter;
+			@media #{$medium} {
+				border-radius: 100px;
+				border-bottom: 0;
+			}
 			&:hover{
 				color: $color-brand;
 			}
@@ -31,7 +35,7 @@
 			}
 		}
 		&.is-active a{
-			background-color: rgba(white, 0.22);
+			background-color: rgba($gray-light, 0.12);
 		}
 		@media #{$medium-max} {
 			z-index: 2;
@@ -45,7 +49,10 @@
 .main-navigation--index{
 	.main-navigation__item{
 		> a{
-			color: white;
+			color: black;
+			@media #{$medium} {
+				color: white;
+			}
 			&:hover{
 				color: $color-brand;
 			}

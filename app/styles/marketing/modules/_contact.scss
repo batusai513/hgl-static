@@ -1,6 +1,5 @@
 .contact-container{
 	@extend %grid;
-	@extend %grid--wide;
 }
 
 .contact-form,
@@ -9,9 +8,9 @@
 }
 
 .contact-form{
-	@extend %small--three-quarters;
+	@extend %small--two-thirds;
 }
 
 .contact-data{
-	@extend %small--one-quarter;
+	@extend %small--one-third;
 }

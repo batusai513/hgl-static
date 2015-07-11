@@ -65,9 +65,11 @@ var Main = (function(window, $){
       $el.velocity('scroll', { duration: 250, easing: "easeInOut", offset: -80 })
     });
 
-    var sticky = new Waypoint.Sticky({
-      element: $('.js-navigation')[0]
-    })
+    if($('.js-navigation').length > 0){
+      var sticky = new Waypoint.Sticky({
+        element: $('.js-navigation')[0]
+      });
+    }
 
 
     $.extend($.validator.messages, {

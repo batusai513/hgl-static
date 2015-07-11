@@ -26,6 +26,11 @@
         "lib/jquery.waypoints.js",
         "lib/shortcuts/sticky.js"
       ]
+    },
+    "velocity": {
+      "main": [
+        "./velocity.js"
+      ]
     }
   }
 }

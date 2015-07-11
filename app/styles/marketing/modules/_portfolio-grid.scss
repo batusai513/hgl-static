@@ -11,7 +11,7 @@
 
 .portfolio__container--single{
 	@extend %grid__item;
-	@extend %medium--one-half;
+	@extend %medium--one-third;
 }
 
 .portfolio-item{
