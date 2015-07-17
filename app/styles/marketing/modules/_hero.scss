@@ -25,49 +25,55 @@
   }
 }
 
-.hero--textures{
-  background-image: url('../images/hero-textures-image-small.jpg');
-  background-position: center;
-  background-size: cover;
-  color: white;
-  @media #{$small} {
-    background-image: url('../images/hero-textures-image.jpg');
-    background-size: auto;
-  }
+.hero--extra{
+  background-color: $gray-lighter;
+  padding: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
+  height: auto;
 }
 
-.hero--servicios{
-  background-image: url('../images/hero-reinvent-image-small.jpg');
-  background-position: center;
-  background-size: cover;
-  color: white;
-  @media #{$small} {
-    background-image: url('../images/hero-reinvent-image.jpg');
-    background-size: auto;
-  }
-}
+// .hero--textures{
+//   background-image: url('../images/hero-textures-image-small.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   color: white;
+//   @media #{$small} {
+//     background-image: url('../images/hero-textures-image.jpg');
+//     background-size: auto;
+//   }
+// }
 
-.hero--instalation{
-  background-image: url('../images/hero-instalation-image-small.jpg');
-  background-position: center;
-  background-size: cover;
-  color: white;
-  @media #{$small} {
-    background-image: url('../images/hero-instalation-image.jpg');
-    background-size: auto;
-  }
-}
+// .hero--servicios{
+//   background-image: url('../images/hero-reinvent-image-small.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   color: white;
+//   @media #{$small} {
+//     background-image: url('../images/hero-reinvent-image.jpg');
+//     background-size: auto;
+//   }
+// }
 
-.hero--contact{
-  background-image: url('../images/hero-contact-image-small.jpg');
-  background-position: center;
-  background-size: cover;
-  color: white;
-  @media #{$small} {
-    background-image: url('../images/hero-contact-image.jpg');
-    background-size: auto;
-  }
-}
+// .hero--instalation{
+//   background-image: url('../images/hero-instalation-image-small.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   color: white;
+//   @media #{$small} {
+//     background-image: url('../images/hero-instalation-image.jpg');
+//     background-size: auto;
+//   }
+// }
+
+// .hero--contact{
+//   background-image: url('../images/hero-contact-image-small.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   color: white;
+//   @media #{$small} {
+//     background-image: url('../images/hero-contact-image.jpg');
+//     background-size: auto;
+//   }
+// }
 
 .hero--main__title{
   @include rem($font-size-h4);
@@ -87,7 +93,7 @@
 
 .hero__title{
   @include rem($font-size-h2);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .hero__subtitle{

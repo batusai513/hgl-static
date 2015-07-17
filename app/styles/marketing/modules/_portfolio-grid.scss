@@ -1,6 +1,7 @@
 .portfolio{
 	@extend %grid;
 	@extend %grid--narrow;
+	@extend %grid--center;
 }
 
 .portfolio__container{
@@ -11,7 +12,8 @@
 
 .portfolio__container--single{
 	@extend %grid__item;
-	@extend %medium--one-third;
+	@extend %medium--two-thirds;
+	text-align: center !important;
 }
 
 .portfolio-item{
@@ -31,12 +33,6 @@
 .portfolio__content{
 	padding: 0 6px;
 }
-// .portfolio__thumb{
-// 	width: 50px;
-// 	height: 50px;
-// 	margin-top: $half-spacing-unit;
-// 	display: inline-block;
-// }
 .portfolio-item__text{
 	@include rem($half-spacing-unit, margin-bottom);
 	color: #807f7f;

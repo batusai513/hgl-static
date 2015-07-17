@@ -81,3 +81,12 @@
     height: 97px;
   }
 }
+
+.personal-grid__item{
+  padding: 0 em($base-spacing-unit);
+}
+
+.personal-grid__text{
+  font-size: em($font-size-small);
+  text-align: center;
+}

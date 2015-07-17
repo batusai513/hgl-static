@@ -6,6 +6,9 @@
   font-size: $font-size-large;
 }
 
+.text--smaller{
+  font-size: em($font-size-smaller);
+}
 
 // Position elements
 .align-center,
