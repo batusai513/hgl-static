@@ -54,7 +54,7 @@ var Main = (function(window, $){
           styles: mapStyles
       });
     }
-    
+
 
     $('.js-next').on('click', function(e){
       e.preventDefault;
@@ -94,8 +94,13 @@ var Main = (function(window, $){
 
 
   	$('.flexslider').flexslider({
-  		controlNav: false,
+  		controlNav: false
   	});
+
+    $('.js-main-slider').flexslider({
+      directionNav: false,
+      animation: "slide"
+    })
 
     $('.js-contact-form').each(function(){
       $(this).validate({

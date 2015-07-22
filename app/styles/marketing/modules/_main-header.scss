@@ -9,6 +9,7 @@
 	background-color: rgba(black, 0.5);
 	bottom: 0;
 	position: absolute;
+	z-index: 99;
 	transition: all 0.3s ease-in 0.1s;
 	&.stuck {
 		background-color: white;

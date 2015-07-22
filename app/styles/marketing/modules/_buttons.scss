@@ -103,7 +103,7 @@
   margin: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
   &--large{
     @media #{$medium}{
-      margin: $base-spacing-unit * 4 0 $base-spacing-unit * 4;  
+      margin: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
     }
   }
 }

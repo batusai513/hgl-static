@@ -6,7 +6,7 @@
   padding: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
   @media #{$small} {
     @include rem(350px, height);
-    padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4; 
+    padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
   }
 }
 
@@ -21,7 +21,18 @@
     background-image: url('../images/main-hero-image.jpg');
     background-size: cover;
     height: 95%;
+    min-height: 620px;
     padding: 0;
+  }
+}
+
+.main-slider{
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  img{
+    width: 100%;
   }
 }
 
@@ -30,50 +41,6 @@
   padding: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
   height: auto;
 }
-
-// .hero--textures{
-//   background-image: url('../images/hero-textures-image-small.jpg');
-//   background-position: center;
-//   background-size: cover;
-//   color: white;
-//   @media #{$small} {
-//     background-image: url('../images/hero-textures-image.jpg');
-//     background-size: auto;
-//   }
-// }
-
-// .hero--servicios{
-//   background-image: url('../images/hero-reinvent-image-small.jpg');
-//   background-position: center;
-//   background-size: cover;
-//   color: white;
-//   @media #{$small} {
-//     background-image: url('../images/hero-reinvent-image.jpg');
-//     background-size: auto;
-//   }
-// }
-
-// .hero--instalation{
-//   background-image: url('../images/hero-instalation-image-small.jpg');
-//   background-position: center;
-//   background-size: cover;
-//   color: white;
-//   @media #{$small} {
-//     background-image: url('../images/hero-instalation-image.jpg');
-//     background-size: auto;
-//   }
-// }
-
-// .hero--contact{
-//   background-image: url('../images/hero-contact-image-small.jpg');
-//   background-position: center;
-//   background-size: cover;
-//   color: white;
-//   @media #{$small} {
-//     background-image: url('../images/hero-contact-image.jpg');
-//     background-size: auto;
-//   }
-// }
 
 .hero--main__title{
   @include rem($font-size-h4);
