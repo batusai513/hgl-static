@@ -2,7 +2,8 @@
 .float-end { float: $end; }
 .float-none { float: none; }
 
-.font-size-large{
+.font-size-large,
+.text-large{
   font-size: $font-size-large;
 }
 
