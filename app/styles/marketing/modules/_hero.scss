@@ -28,11 +28,30 @@
 
 .main-slider{
   position: absolute;
+  top: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   z-index: 0;
-  img{
-    width: 100%;
+  .flex-viewport,
+  .slides,
+  .slides li{
+    height: 100%;
+  }
+}
+
+.main-slider__slide{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &.first{
+    background-image: url('../images/slide1.jpg');
+  }
+  &.second{
+    background-image: url('../images/slide2.jpg');
+  }
+  &.third{
+    background-image: url('../images/slide3.jpg');
   }
 }
 

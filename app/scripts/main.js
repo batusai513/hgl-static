@@ -93,13 +93,13 @@ var Main = (function(window, $){
     });
 
 
-  	$('.flexslider').flexslider({
+  	$('.js-quotes').flexslider({
   		controlNav: false
   	});
 
     $('.js-main-slider').flexslider({
       directionNav: false,
-      animation: "slide"
+      animation: "fade"
     })
 
     $('.js-contact-form').each(function(){
