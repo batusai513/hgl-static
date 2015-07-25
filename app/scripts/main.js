@@ -62,7 +62,7 @@ var Main = (function(window, $){
       ref = $this.attr('href'),
       $el = $(ref);
 
-      $el.velocity('scroll', { duration: 250, easing: "easeInOut", offset: -80 })
+      $el.velocity('scroll', { duration: 350, easing: "easeInOut", offset: -80 })
     });
 
     if($('.js-navigation').length > 0){
@@ -123,68 +123,6 @@ var Main = (function(window, $){
       var $this = $(this),
           $href = $this.attr('href');
       $($href).toggle();
-    });
-
-    $('.js-gallery').each(function(){
-      $(this).magnificPopup({
-        type: 'image',
-        delegate: 'a',
-        mainClass: 'mfp-with-zoom mfp-img-mobile',
-        gallery: {
-          enabled: true
-        },
-        zoom: {
-          enabled: true,
-          duration: 300, // don't foget to change the duration also in CSS
-          opener: function(element) {
-            return element.find('img');
-          }
-        },
-        callbacks: {
-          open: function() {
-            var container = this.contentContainer,
-                prev = container.find('.js-mfp-arrow-left'),
-                next = container.find('.js-mfp-arrow-right'),
-                _this = this;
-
-            prev.on('click', function(e) {
-                e.preventDefault();
-                _this.prev();
-            });
-
-            next.on('click', function(e) {
-                e.preventDefault();
-                _this.next();
-            });
-          },
-          change: function() {
-            var container = this.contentContainer,
-                prev = container.find('.js-mfp-arrow-left'),
-                next = container.find('.js-mfp-arrow-right'),
-                _this = this;
-
-            prev.on('click', function(e) {
-                e.preventDefault();
-                _this.prev();
-            });
-
-            next.on('click', function(e) {
-                e.preventDefault();
-                _this.next();
-            });
-          },
-          close: function() {
-            var container = this.contentContainer,
-                prev = container.find('.js-mfp-arrow-left'),
-                next = container.find('.js-mfp-arrow-right'),
-                _this = this;
-
-            prev.off('click');
-
-            next.off('click');
-          }
-        }
-      });
     });
 	}
 

@@ -1,8 +1,5 @@
 .pane{
 	padding: $base-spacing-unit 0;
-	*{
-		color: inherit;
-	}
 	&.bg-lighter-gray,
 	&.bg-brand{
 		border-width: 1px 0;
@@ -47,18 +44,21 @@
 
 .pane--spaces{
 	@extend .pane--large;
-	background-color: $gray-lighter;
 	color: $gray;
 	@media #{$small} {
 		padding: $base-spacing-unit * 3 0;
 	}
 }
 
-.pane--clientes{
+.shade--light{
+	background-color: $gray-lighter;
+}
+
+.shade--dark{
 	background-color: #e6e6e6;
 }
 
-.pane-construir{
+.shade--darker{
 	background-color: rgba(#4A4A4A, 0.80);
 }
 

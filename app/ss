@@ -87,79 +87,63 @@
       </div>
     </div>
 
-    <section class="pane pane--medium hard--bottom">
+    <section class="pane pane--medium">
       <h1 class="sr-only">Todos nuestros servicios</h1>
-      <div class="container">
+      <div class="container container--small">
         <article>
           <h1 class="delta border--small border--small--center text-center">Construcción General</h1>
+            <h2 class="epsilon">Construcción Industrial</h2>
+            <p>En HGL constructores tenemos las soluciones constructivas en el área Industrial, construimos naves, bodegas industriales con las técnicas más avanzadas en obras civiles.</p>
+            <ul class="push">
+              <li>Diseño, fabricación y montaje de instalaciones especiales para hangares.</li>
+              <li>Construcción de estaciones de servicio.</li>
+              <li>Diseño, planificación y ejecución de instalaciones deportivas.</li>
+            </ul>
+            <h2 class="epsilon">Construcción hospitalaria</h2>
+            <p>Contamos con la experiencia necesaria para la construcción y adecuación de espacios destinados a la atención hospitalaria:</p>
+            <ul class="push">
+              <li>Diseño y construcción de clínicas, IPS, sedes de EPS, consultorios médicos, centros hospitalarios.</li>
+              <li>Adecuación de espacios asépticos de conformidad con la ley.</li>
+            </ul>
+            <h2 class="epsilon">Construcción Comercial</h2>
+            <p>Estamos capacitados para la construcción, ampliación y remodelación de obras comerciales como:</p>
+            <ul class="push">
+              <li>Locales y oficinas, locales para franquicias, salas de juegos.</li>
+              <li>Construcción de plazas turísticas.</li>
+              <li>Edificios con la más alta tecnología en seguridad y estándares de calidad.</li>
+              <li>Construcción de edificios comerciales.</li>
+              <li>Diseño y construcción del salón de convenciones.</li>
+            </ul>
+            <h2 class="epsilon">Construcción Residencial</h2>
+            <p>Nuestro equipo de trabajo esta capacitado y preparado para ejecutar obras de construcción para vivienda, desde una residencia hasta complejos habitacionales.</p>
+            <p>El equipo de profesionales de HGL Constructores está especializado en diversos sectores de albañilería y reformas en general, acostumbrado a trabajar con los clientes más exigentes y de cumplir las expectativas con un trabajo bien hecho.</p>
+            <ul class="push">
+              <li>Reformas y remodelaciones de casas, apartamentos y todo tipo de viviendas.</li>
+              <li>Construcción de casas, edificios, conjuntos residenciales, viviendas multifamiliares y casas de campo.</li>
+              <li>Albañilería, fontanería, electricidad, carpintería de madera, carpintería metálica, vidrios, pintura, entre otros.</li>
+            </ul>           
+        </article>
+        <article class="text-center">
+          <h1 class="delta border--small border--small--center text-center">Consultoría</h1>
             <p>
-              Comprometido con los clientes más exigentes y con cumplir las expectativas de un trabajo bien hecho, el equipo de profesionales de HGL Constructores está especializado en diversos sectores relacionados con los proyectos de construcción y reformas en general, como albañilería, fontanería, electricidad, carpintería de madera, carpintería metálica, vidrios, pintura, entre otros. 
+              Gerencia de proyectos, presupuestos, estudios económicos y financieros, planeamiento y evaluación de proyectos, interventorías y licitaciones, diseño de interiores.
+            </p>        
+        </article>
+        <article class="text-center">
+          <h1 class="delta border--small border--small--center text-center">Servicios</h1>
+            <p>
+              Mantenimiento y reparación de instalaciones y estructuras físicas; rehabilitaciones, restauraciones y remodelaciones integrales; impermeabilizaciones, fachadas y acabados.
             </p>
-            <div class="grid grid--full">
-              <div class="grid__item medium--one-half">
-                <article class="color-grid__item color1">
-                  <h1 class="text-uppercase color-grid__title">Construcción Industrial</h1>
-                  <p class="color-grid__text">
-                    Diseñamos y construimos naves, bodegas industriales, estaciones de servicio e instalaciones deportivas con las técnicas más avanzadas en obras civiles. Diseñamos, fabricamos y hacemos montaje de instalaciones especiales para hangares.
-                  </p>
-                </article>
-              </div><div class="grid__item medium--one-half">
-                <article class="color-grid__item color2">
-                  <h1 class="text-uppercase color-grid__title">Construcción hospitalaria</h1>
-                  <p class="color-grid__text">
-                    Construimos y adecuamos espacios destinados a la atención hospitalaria, como clínicas, IPS, sedes de EPS, consultorios médicos, centros hospitalarios y espacios asépticos, actuando siempre de conformidad con la ley.
-                  </p>
-                </article>
-              </div><div class="grid__item medium--one-half">
-                <article class="color-grid__item color3">
-                  <h1 class="text-uppercase color-grid__title">Construcción Comercial</h1>
-                  <p class="color-grid__text">
-                    Construimos, ampliamos y remodelamos obras comerciales, como locales y oficinas, locales para franquicias, salas de juegos, plazas turísticas, salones de convenciones y edificios comerciales, utilizando la más alta tecnología en seguridad y estándares de calidad.
-                  </p>
-                </article>
-              </div><div class="grid__item medium--one-half">
-                <article class="color-grid__item color4">
-                  <h1 class="text-uppercase color-grid__title">Construcción Residencial</h1>
-                  <p class="color-grid__text">
-                    Construimos, reformamos y remodelamos todo tipo de viviendas, complejos habitacionales, edificios, conjuntos residenciales y casas de campo.
-                  </p>
-                </article>
-              </div>
-            </div>        
         </article>
       </div>
     </section>
 
 
-    <div class="pane pane--medium shade--light">
-        <article class="container">
-          <h1 class="delta border--small border--small--center text-center">Otros Servicios</h1>
-            <div class="grid grid--full">
-              <div class="grid__item medium--one-half">
-                <article class="color-grid__item color1">
-                  <h1 class="text-uppercase color-grid__title">Consultoría</h1>
-                  <p class="color-grid__text">
-                    Gerencia de proyectos, presupuestos, estudios económicos y financieros, planeamiento y evaluación de proyectos, interventorías y licitaciones, diseño de interiores.
-                  </p>
-                </article>
-              </div><div class="grid__item medium--one-half">
-                <article class="color-grid__item color1">
-                  <h1 class="text-uppercase color-grid__title">Servicios</h1>
-                  <p class="color-grid__text">
-                    Mantenimiento y reparación de instalaciones y estructuras físicas; rehabilitaciones, restauraciones y remodelaciones integrales; impermeabilizaciones, fachadas y acabados.
-                  </p>
-                </article>
-              </div>
-            </div>       
-        </article>
-    </div>
-
-
-    <div class="pane pane--medium text-center shade--dark">
+    <div class="pane pane--medium text-center bg-lighter-gray">
       <div class="container text-center">
         <p><b class="text-large">¡Llámanos!</b> <br> Estamos disponibles de lunes a viernes de 8:00am a 6:00pm y sábados de 8:00am a 1:00pm.</p>
-        <a href="tel:+573175100255" class="beta button button--huge button-border--black uppercase"><span class="icon-phone icon-lg push-half--right"></span> +57 317 510 02 55</a>
-        <a href="tel:+5753044311" class="beta button button--huge button-border--black uppercase"><span class="icon-phone icon-lg push-half--right"></span> +57 5 304 43 11</a>
+        <a href="tel:+573175100255" class="beta button button--huge button-border--brand uppercase"><span class="icon-phone icon-lg push-half--right"></span> +57 317 510 02 55</a>
+        <a href="tel:+5753044311" class="beta button button--huge button-border--brand uppercase"><span class="icon-phone icon-lg push-half--right"></span> +57 5 304 43 11</a>
       </div>
     </div>
 
