@@ -2,59 +2,7 @@
 
 var Main = (function(window, $){
 
-  var mapStyles =[
-    {
-    stylers: [
-      { saturation: "-100" },
-      { lightness: "20" }
-    ]
-    },{
-    featureType: "poi",
-    stylers: [
-      { visibility: "off" }
-    ]
-    },{
-    featureType: "transit",
-    stylers: [
-      { visibility: "off" }
-    ]
-    },{
-    featureType: "road",
-    stylers: [
-      { lightness: "50" },
-      { visibility: "on" }
-    ]
-    },{
-    featureType: "landscape",
-    stylers: [
-      { lightness: "50" }
-    ]
-    }
-  ];
-
 	function init(){
-
-    var canvas = null,
-        map = null,
-        marker = null,
-       mapOptions = {
-        zoom: 16,
-        center:  new google.maps.LatLng(10.999645,-74.8166729),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true
-      }
-    canvas = $('#map-canvas');
-    if(canvas.length !==0){
-      map = new google.maps.Map($('#map-canvas')[0], mapOptions);
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(10.999645,-74.8166729),
-        map: map
-      });
-      map.setOptions({
-          styles: mapStyles
-      });
-    }
-
 
     $('.js-next').on('click', function(e){
       e.preventDefault;
@@ -133,6 +81,7 @@ var Main = (function(window, $){
 }(window, jQuery));
 
 $(function(){
+  var map = HGLMapFactory('#map-canvas');
 	Main.init();
 });
 
