@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>3DBambu</title>
+    <title>HGL Constructores: construyendo confianza</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -14,16 +14,34 @@
     <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <link href='http://fonts.googleapis.com/css?family=Lora|Ovo|Muli' rel='stylesheet' type='text/css'>
     <!-- build:css(.tmp) styles/hglstyles.css -->
     <link rel="stylesheet" href="styles/hglstyles.css">
     <!-- endbuild -->
+
     <!-- build:js scripts/vendor/respond.js -->
-    <!-- bower:js -->
     <!--[if lte IE 8]>
       <script src="bower_components/respond/dest/respond.src.js"></script>
     <![endif]-->
     <!-- endbuild -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:300, 400,700:latin', 'Montserrat::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- build:js scripts/vendor/respond.js -->
+    <!--[if lte IE 8]>
+      <script src="bower_components/respond/dest/respond.src.js"></script>
+    <![endif]-->
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -36,28 +54,25 @@
     <![endif]-->
     <header class="main-header">
       <div class="container">
-        <div class="header-container">
-          <div class="header__logo-area">
+        <div class="header-container grid grid--middle">
+          <div class="header__logo-area grid__item one-half small--one-third">
             <h1 class="main-logo">
               <a href="index.html">
                 HGL Constructores
               </a>
             </h1>
-          </div><div class="header__navigation-area">
+          </div><div class="header__navigation-area text-end grid__item one-half small--two-thirds">
             <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
-            <nav class="main-navigation" id="main-navigation">
+            <nav class="main-navigation main-navigation--secondary" id="main-navigation">
               <ul class="nav flush--bottom">
                 <li class="nav__item main-navigation__item">
-                  <a href="texturas.html">Texturas de Paneles</a>
+                  <a href="proyectos.html">Obras Realizadas</a>
                 </li>
                 <li class="nav__item main-navigation__item">
-                  <a href="caracteristicas.html">Características</a>
+                  <a href="servicios.html">Servicios</a>
                 </li>
-                <li class="nav__item main-navigation__item">
-                  <a href="instalacion.html">Instalación</a>
-                </li>
-                <li class="nav__item main-navigation__item">
-                  <a href="faq.html">Preguntas Frecuentes</a>
+                <li class="nav__item main-navigation__item is-active">
+                  <a href="nosotros.html">Quiénes Somos</a>
                 </li>
                 <li class="nav__item main-navigation__item">
                   <a href="contacto.html">Contacto</a>
@@ -69,11 +84,15 @@
       </div>
     </header>
     <section class="hero hero--complete hero--main text-center">
-      <div class="container">
-        <h1 class="hero--main__title"><b>Gracias</b><br> por ponerte en contacto con nosotros</h1>
-        <p class="hero--main__subtitle">Pronto te estaremos escribiendo para tener el gusto de atenderte</p>
-        <div class="group-buttons">
-          <a href="/texturas.html" class="button button--huge button-border button-border--white text-uppercase">Regresar</a>
+      <div class="container" style="height: 100%;">
+        <div class="vm-table">
+          <div class="vm-table__cell">
+            <h1 class="hero--main__title"><b>Gracias</b><br> por ponerte en contacto con nosotros</h1>
+            <p class="hero--main__subtitle">Pronto te estaremos escribiendo para tener el gusto de atenderte</p>
+            <div class="group-buttons">
+              <a href="/index.html" class="button button--huge button-border button-border--white text-uppercase">Regresar</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -81,20 +100,17 @@
       <div class="container">
         <article class="footer-container">
           <div class="footer__navigation">
-            <h1 class="epsilon title--bordered">Navegacion</h1>
+            <h1 class="epsilon title--bordered">Navegación</h1>
             <nav>
               <ul class="list-unstyled">
                 <li class="">
-                  <a href="texturas.html">Paneles 3D</a>
+                  <a href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="">
-                  <a href="caracteristicas.html">Características</a>
+                  <a href="servicios.html">Servicios</a>
                 </li>
                 <li class="">
-                  <a href="instalacion.html">Instalación</a>
-                </li>
-                <li class="">
-                  <a href="faq.html">Preguntas Frecuentes</a>
+                  <a href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="">
                   <a href="contacto.html">Contacto</a>
@@ -105,31 +121,31 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
-                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
+                    <a href="https://www.facebook.com/hglconstructor">
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /hglconstructor
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://instagram.com/3dbambu/">
-                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
+                    <a href="https://instagram.com/hglconstructores/">
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> hglconstructores
                     </a>
                   </li>
                   <li class="">
-                    <a href="https://twitter.com/3dbambu">
-                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
+                    <a href="https://twitter.com/hglconstructor">
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @hglconstructor
                     </a>
                   </li>
                 </ul>
             </article><article class="footer__newsletter">
-              <h1 class="epsilon title--bordered">Suscribete</h1>
+              <h1 class="epsilon title--bordered">Suscríbete</h1>
               <p>
-                Mantente al tanto de las promociones, <br> noticias y concursos
+                Mantente al tanto de las novedades <br> disponibles para tí
               </p>
               <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
-                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="recipients" value="lramirez@hglconstructores.com">
                 <input type="hidden" name="good_url" value="/good.html">
                 <div class="form-group">
-                <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
+                <label for="newsletter" class="sr-only">Suscríbete a nuestro newsletter</label>
                   <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
                 </div>
                 <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
@@ -163,8 +179,16 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/map.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/ie.js -->
+    <!--[if lte IE 8]>
+      <script src="scripts/jquery-extended-selectors.js"></script>
+      <script src="scripts/selectivizr.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
 </body>
 </html>

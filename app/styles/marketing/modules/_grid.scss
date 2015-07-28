@@ -95,13 +95,8 @@
   text-align: center;
 }
 
-.color-grid{
-
-}
-
 $box-height:      300px;
 $transform:       ($box-height / 2) - (($font-size-h3 + $line-height-large) / 2 + $base-spacing-unit);
-
 
 .color-grid__item{
   min-height: $box-height;

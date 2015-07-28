@@ -40,10 +40,14 @@
       })();
     </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- build:js scripts/vendor/respond.js -->
+    <!--[if lte IE 8]>
+      <script src="bower_components/respond/dest/respond.src.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -232,32 +236,32 @@
         <ul class="grid">
           <li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-user-tie round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Honestidad</p>
             </article>
           </li><li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-star-full round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Profesionalismo</p>
             </article>
           </li><li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-calendar round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Transparencia</p>
             </article>
           </li><li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-stats-dots round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Calidad de servicio</p>
             </article>
           </li><li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-briefcase round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Compromiso con nuestros clientes</p>
             </article>
           </li><li class="grid__item one-third">
             <article class="value__item">
-            <span class="icon-store round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
+            <span class="icon-help round-icon round-icon--medium round-icon--border round-icon--default push--bottom"></span>
             <p class="value__title">Asistencia personalizada</p>
             </article>
           </li>
@@ -278,7 +282,7 @@
       <div class="container text-center">
         <p>Mantente al tanto de las novedades disponibles para tí. <br> Suscríbete a nuestro newsletter.</p>
         <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail_2">
-          <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+          <input type="hidden" name="recipients" value="lramirez@hglconstructores.com">
           <input type="hidden" name="good_url" value="/good.html">
           <div class="form-group">
           <label for="newsletter" class="sr-only">Suscríbete a nuestro newsletter</label>
@@ -335,7 +339,7 @@
                 Mantente al tanto de las novedades <br> disponibles para tí
               </p>
               <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
-                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="recipients" value="lramirez@hglconstructores.com">
                 <input type="hidden" name="good_url" value="/good.html">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscríbete a nuestro newsletter</label>
@@ -372,9 +376,16 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/map.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/map.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/ie.js -->
+    <!--[if lte IE 8]>
+      <script src="scripts/jquery-extended-selectors.js"></script>
+      <script src="scripts/selectivizr.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
 </body>
 </html>

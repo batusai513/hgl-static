@@ -35,6 +35,7 @@
 			}
 		}
 		&.is-active a{
+			background-color: $gray-light;
 			background-color: rgba($gray-light, 0.12);
 		}
 		@media #{$medium-max} {

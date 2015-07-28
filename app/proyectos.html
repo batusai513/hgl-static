@@ -40,6 +40,11 @@
       })();
     </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- build:js scripts/vendor/respond.js -->
+    <!--[if lte IE 8]>
+      <script src="bower_components/respond/dest/respond.src.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -301,7 +306,7 @@
       </section>
     </section>
 
-    <div class="pane pane--small pane-construir text-center">
+    <div class="pane pane--small shade--darker text-center">
       <div class="container container--small">
         <div class="grid grid--middle">
           <div class="grid__item medium--two-thirds">
@@ -359,7 +364,7 @@
                 Mantente al tanto de las novedades <br> disponibles para tí
               </p>
               <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
-                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="recipients" value="lramirez@hglconstructores.com">
                 <input type="hidden" name="good_url" value="/good.html">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscríbete a nuestro newsletter</label>
@@ -396,9 +401,16 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/map.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/map.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/ie.js -->
+    <!--[if lte IE 8]>
+      <script src="scripts/jquery-extended-selectors.js"></script>
+      <script src="scripts/selectivizr.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
 </body>
 </html>

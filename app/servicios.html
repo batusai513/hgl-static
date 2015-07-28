@@ -40,6 +40,11 @@
       })();
     </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- build:js scripts/vendor/respond.js -->
+    <!--[if lte IE 8]>
+      <script src="bower_components/respond/dest/respond.src.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -92,7 +97,7 @@
       <div class="container">
         <article>
           <h1 class="delta border--small border--small--center text-center">Construcción General</h1>
-            <p>
+            <p class="text-center">
               Comprometido con los clientes más exigentes y con cumplir las expectativas de un trabajo bien hecho, el equipo de profesionales de HGL Constructores está especializado en diversos sectores relacionados con los proyectos de construcción y reformas en general, como albañilería, fontanería, electricidad, carpintería de madera, carpintería metálica, vidrios, pintura, entre otros. 
             </p>
             <div class="grid grid--full">
@@ -209,7 +214,7 @@
                 Mantente al tanto de las novedades <br> disponibles para tí
               </p>
               <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
-                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="recipients" value="lramirez@hglconstructores.com">
                 <input type="hidden" name="good_url" value="/good.html">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscríbete a nuestro newsletter</label>
@@ -248,6 +253,13 @@
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/map.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/ie.js -->
+    <!--[if lte IE 8]>
+      <script src="scripts/jquery-extended-selectors.js"></script>
+      <script src="scripts/selectivizr.js"></script>
+    <![endif]-->
     <!-- endbuild -->
 </body>
 </html>
