@@ -7,18 +7,11 @@
 .image-grid__container{
 	float: left;
 	position: relative;
-	width: 100%;
 	&:before {
 	  display: block;
 	  content: " ";
 	  width: 100%;
 	  padding-bottom: (3/4) * 100%;
-	}
-	@media #{$small} {
-		width: 100/2 * 1%;
-	}
-	@media #{$medium} {
-		width: 100/3 * 1%;
 	}
 }
 
@@ -30,6 +23,9 @@
 	left: 3px;
 	right: 3px;
 	border: 1px solid $gray-lighter;
+	> *{
+		display: block;
+	}
 	&:after{
 		background-image: url('../images/shadow.png');
 		background-position: bottom;
@@ -51,6 +47,12 @@
 	}
 }
 
+.image-grid-item--solid{
+	.image-grid__content{
+		background-color: $gray;
+	}
+}
+
 .image-grid__image{
 	width: 100%;
 }
@@ -61,6 +63,7 @@
 	z-index: 3;
 	padding: em($half-spacing-unit);
 	color: white;
+	width: 100%;
 }
 
 .image-grid__title{

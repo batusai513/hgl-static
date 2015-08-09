@@ -22,6 +22,10 @@
   @extend %medium--one-half;
 }
 
+.one-whole{
+  @extend %one-whole;
+}
+
 .one-half{
   @extend %one-half;
 }
@@ -114,6 +118,14 @@ $transform:       ($box-height / 2) - (($font-size-h3 + $line-height-large) / 2 
   }
   &.color4{
     background-color: #e95a36;
+  }
+  &.color-white{
+    background-color: $gray-lighter;
+    color: black;
+    .color-grid__title{
+      color: black;
+      font-size: em($font-size-h5);
+    }
   }
 }
 
